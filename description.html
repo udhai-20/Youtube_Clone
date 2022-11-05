@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.0/css/all.min.css">
+    <title>Description page</title>
+    <style>
+        #main_list {
+            display: flex;
+            width: 100%;
+            /* flex-direction: column; */
+            margin: auto;
+            margin-top: 40px;
+            /* border: 1px solid rgb(38, 0, 255); */
+            justify-content: space-between;
+            gap: 10px;
+        }
+
+        #main {
+            width: 70%;
+            box-shadow: rgba(202, 206, 212, 0.3) 0px 0px 0px 3px;
+        }
+
+        #main iframe {
+            width: 100%;
+            height: 600px;
+        }
+
+
+
+        #parent {
+            width: 30%;
+            display: flex;
+            flex-direction: column;
+            /* border: 3px solid rgb(0, 255, 76); */
+            box-shadow: rgba(202, 206, 212, 0.3) 0px 0px 0px 3px;
+        }
+
+
+        #name {
+            font-size: 10px;
+            /* border: 3px solid blue; */
+        }
+
+        #related {
+            width: 100%;
+            text-align: center;
+
+
+        }
+
+        #related iframe {
+            width: 100%;
+        }
+
+        #iframe_vid {
+            width: 80%;
+            margin: auto;
+        }
+
+        #iframe_vid iframe {
+
+            width: 100%;
+            height: 200px;
+            text-align: center;
+        }
+
+
+
+        #nav {
+            display: flex;
+            /* border: 1px solid red; */
+            justify-content: space-between;
+            align-items: center;
+            position: relative;
+        }
+
+        #list1 {
+            display: flex;
+            gap: 30px;
+        }
+
+        #list1 li {
+            list-style: none;
+        }
+
+        #list2 li {
+            list-style: none;
+        }
+
+        #list2 {
+            display: flex;
+            gap: 30px;
+            margin-right: 20px;
+        }
+
+        #search {
+            width: 40%;
+            margin: auto;
+            /* border: 1px solid red; */
+
+        }
+
+        #search input {
+            width: 70%;
+            margin: auto;
+            padding: 5px;
+
+        }
+
+        button {
+            padding: 5px 20px;
+            margin-left: -10px;
+
+        }
+
+        img {
+            width: 100%;
+        }
+
+        #voice_search {
+            margin-left: 20px;
+
+        }
+
+        #youtube {
+            font-size: 20px;
+            color: red;
+        }
+
+        #Title {
+            /* border: 1px solid red; */
+            margin-left: -26px;
+        }
+
+        #list {
+            font-size: 15px;
+            color: black;
+
+        }
+
+        #create {
+
+            font-size: 20px;
+            color: black;
+        }
+
+        #bell {
+            font-size: 20 px;
+            color: black;
+
+        }
+
+        #sign {
+            font-size: 20px;
+            color: black;
+
+        }
+
+        #channel_name {
+            font-size: 10px;
+            /* border: 1px solid red; */
+        }
+
+        #videotitle {
+            /* border: 1px solid red; */
+            color: var(--yt-spec-text-primary);
+            font-family: "Roboto", "Arial", sans-serif;
+            font-size: 0.8rem;
+            line-height: 1rem;
+            font-weight: 500;
+            margin-bottom: 4px;
+
+        }
+
+        #video {
+            border: 1px solid red;
+            width: 50%;
+            margin: auto;
+            margin-left: 50px;
+            height: 500px;
+        }
+
+        #video iframe {
+            width: 100%;
+            height: 100%;
+            /* margin: auto; */
+        }
+
+        * {
+            font-family: "Roboto", "Arial", sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="nav">
+        <ul id="list1">
+            <li id="list"><i class="fas fa-list-ul"></i>
+            </li>
+            <a href="index.html"><i id="youtube" class="fab fa-youtube"></i></a>
+            <li id="Title">Premium</li>
+        </ul>
+        <div id="search">
+            <input type="text" id="query" placeholder="Search">
+            <button onclick="getData()"><i class="fas fa-search"></i></button>
+            <span id="voice_search"><i class="fas fa-microphone"></i></span>
+            <!-- <div id="Search_list">
+            </div> -->
+        </div>
+        <ul id="list2">
+            <li id="create"><i class="fas fa-plus-circle"></i></li>
+            <li id="bell"><i class="far fa-bell"></i></li>
+            <li id="sign"><i class="fas fa-user-circle"></i></li>
+        </ul>
+    </div>
+    <hr>
+    <div id="main_list">
+        <!-- <div id="main">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGVBG-gLrwqT_ZbUTjoHbgahHy1h2Qtx28xw&usqp=CAU"
+                alt=""> -->
+        <!-- </div> -->
+        <!-- <div id="related"> -->
+        <!-- <div> <img
+                    src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGVBG-gLrwqT_ZbUTjoHbgahHy1h2Qtx28xw&usqp=CAU"
+                    alt="">
+                <p>dfgg</p>
+            </div>
+
+
+            <div>
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGVBG-gLrwqT_ZbUTjoHbgahHy1h2Qtx28xw&usqp=CAU"
+                    alt="">
+                <p>dfgg</p>
+            </div> -->
+        <!-- </div> -->
+        <div id="main"></div>
+        <div id="parent"></div>
+
+    </div>
+
+</body>
+<script src=" description.js"></script>
+
+</html>
